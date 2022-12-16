@@ -41,22 +41,33 @@ function point() {
         }
         compt++
         if(tab[0] == tab[1] && tab[2] == tab[1] && tab[0] !="") {
+            // joueur.textContent = tab[0] == "X" ? "C'est joueur 1 le gagnant 😉" : "C'est joueur 2 le gagnant 😉"
             console.log("Vous avez gagné 😉")
         } else if (tab[3] == tab[4] && tab[5] == tab[4] && tab[3] != "" ) {
             console.log("Vous avez gagné 😉")
         }  else if (tab[6] == tab[7] && tab[8] == tab[7] && tab[6] != "" ) {
-            console.log("Vous avez gagné :-)")
+            console.log("Vous avez gagné 😉")
         }  else if (tab[0] == tab[3] && tab[6] == tab[3] && tab[0] != "" ) {
-            console.log("Vous avez gagné :-)")
+            console.log("Vous avez gagné 😉")
         }  else if (tab[1] == tab[4] && tab[7] == tab[4] && tab[1] != "" ) {
-            console.log("Vous avez gagné :-)")
+            console.log("Vous avez gagné 😉")
         }  else if (tab[2] == tab[5] && tab[8] == tab[5] && tab[2] != "" ) {
-            console.log("Vous avez gagné :-)")
+            console.log("Vous avez gagné 😉")
         }  else if (tab[0] == tab[4] && tab[8] == tab[4] && tab[0] != "" ) {
-            console.log("Vous avez gagné :-)")
+            console.log("Vous avez gagné 😉")
         }  else if (tab[2] == tab[4] && tab[6] == tab[4] && tab[2] != "" ) {
-            console.log("Vous avez gagné :-)")
+            console.log("Vous avez gagné 😉")
         } else if (!tab.includes('')){
             alert('Match Nul')
         }
+}
+
+var player = 1;
+document.getElementById('joueur').innerHTML = "A toi de jouer joueur " + player;
+
+function bouton(){
+    let tab = ["", "", "", "", "", "","", "",""];
+    for(let td of elemt){
+        td.textContent =""
+    }
 }
